@@ -44,9 +44,9 @@ async def ruletka(ctx):
     flip = random.randint(1 , 9)
     frazi = ["Вам повезло, патрона не было", "Фух, пронесло, пусто", "ЛЕГЧАЙШАЯ, ПАТРОНА НЕТУ", "а вы везучий, остались живы(это временно)"]
     if flip == 1:
-        await ctx.send()
+        await ctx.send("Смерти")
     else:
-        return random.choice(frazi)
+        await ctx.send(random.choice(frazi))
 
 
 
